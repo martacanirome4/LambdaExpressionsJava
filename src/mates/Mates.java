@@ -6,6 +6,11 @@ import java.util.List;
 public class Mates {
 
     // ejercicio 1
+    /**
+     * Devuelve una lista con el cuadrado de cada elemento de otra lista de números
+     * @param numeros - lista de enteros
+     * @return cuadrados - lista de enteros con el cuadrado de cada elemento de la lista de entrada
+     */
     public static List<Integer> cuadradosLista(List<Integer> numeros) {
         List<Integer> cuadrados = new ArrayList<>();
         numeros.forEach(numero -> cuadrados.add(numero * numero));
@@ -13,6 +18,11 @@ public class Mates {
     }
 
     // ejercicio 2
+    /**
+     * Devuelve la suma de los elementos de una lista de números
+     * @param numeros - lista de enteros
+     * @return suma - suma de los elementos de la lista de entrada
+     */
     public static int sumaLista(List<Integer> numeros) {
         int suma = numeros
                     .stream()
@@ -23,6 +33,12 @@ public class Mates {
     }
 
     // ejercicio 3
+
+    /**
+     * Devuelve la suma de los elementos pares de una lista de números
+     * @param numeros - lista de enteros
+     * @return suma - suma de los elementos pares de la lista de entrada
+     */
     public static int sumaPares(List<Integer> numeros) {
         int suma = numeros
                     .stream()
@@ -32,6 +48,12 @@ public class Mates {
     }
 
     // ejercicio 4
+
+    /**
+     * Devuelve una lista con los elementos pares de otra lista de números
+     * @param numeros
+     * @return pares - lista con los elementos pares de la lista de entrada
+     */
     public static List<Integer> paresLista(List<Integer> numeros) {
         List<Integer> pares = new ArrayList<>();
         numeros.forEach(numero -> {
@@ -44,6 +66,11 @@ public class Mates {
 
 
     // ejercicio 5
+    /**
+     * Devuelve la media de los elementos de una lista de números
+     * @param numeros - lista de enteros
+     * @return media - double que es la media de los elementos de la lista de entrada
+     */
     public static double mediaLista(List<Integer> numeros) {
         int suma = numeros
                     .stream()
@@ -54,6 +81,12 @@ public class Mates {
 
 
     // ejercicio 6
+
+    /**
+     * Devuelve la desviación típica de los elementos de una lista de números
+     * @param numeros - lista de enteros
+     * @return desviación - double que es la desviación típica de los elementos de la lista de entrada
+     */
     public static double desviacionTipica(List<Integer> numeros) {
         int suma = numeros
                 .stream()
@@ -64,12 +97,23 @@ public class Mates {
     }
 
     // ejercicio 7
+
+    /**
+     * Devuelve el menor elemento de una lista de números
+     * @param numeros - lista de enteros
+     * @return - entero que es el menor elemento de la lista de entrada
+     */
     public static int menorLista(List<Integer> numeros) {
         return numeros.stream().min(Integer::compareTo).orElse(null);
     }
 
 
     // ejercicio 8 / 10
+    /**
+     * Devuelve una lista con todos los elementos de otra lista de String en minúsculas
+     * @param lista - lista de cadenas de caracteres
+     * @return minusculas - lista de cadenas de caracteres en minúsculas
+     */
     public static List<String> aMinusculas(List<String> lista) {
         List<String> minusculas = new ArrayList<>();
         lista.forEach(palabra -> minusculas.add(palabra.toLowerCase()));
@@ -78,6 +122,11 @@ public class Mates {
 
 
     // ejercicio 9
+    /**
+     * Devuelve una lista con todos los elementos de otra lista de String concatenados
+     * @param al - lista de cadenas de caracteres
+     * @return cadena - string con la concatenacion de los strings de la lista de entrada
+     */
     public static String concatenarCadenas(List<String> al) {
         String cadena = al.stream().reduce("", (a, b) -> a + b);
         return cadena;
@@ -85,7 +134,11 @@ public class Mates {
 
 
     // ejercicio 11
-    // Devuelve una lista con todos los elementos de otra lista de String que no empiezen por la letra ‘A’
+    /**
+     * Devuelve una lista con todos los elementos de otra lista de String que no empiezan por la letra A
+     * @param al - lista de cadenas de caracteres
+     * @return sinA - lista de cadenas de caracteres que no empiezan por A
+     */
     public static List<String> noEmpiezaPorA(List<String> al) {
         List<String> sinA = new ArrayList<>();
         al.forEach(palabra -> {
@@ -97,8 +150,12 @@ public class Mates {
     }
 
     // ejercicio 12
-    // Devuelve una lista con todos los números mayores que seis resultantes de multiplicar por 2 todos los elementos
-    // de una lista de entrada
+
+    /**
+     * Devuelve una lista con todos los elementos de otra lista de enteros que multiplicados por 2 son mayores que 6
+     * @param lista - lista de enteros
+     * @return multiplicados - lista de enteros que multiplicados por 2 son mayores que 6
+     */
     public static List<Integer> por2MayorQue6(List<Integer> lista) {
         List<Integer> multiplicados = new ArrayList<>();
         lista.forEach(numero -> {
