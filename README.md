@@ -1,6 +1,6 @@
 # LambdaExpressionsJava
 
-"Las funciones lambdas es un término adoptado de la programación funcional y corresponden con funciones de Java que normalmente son anónimas y se escriben en línea allí donde se usan."
+"Las funciones lambda es un término adoptado de la programación funcional y corresponden con funciones de Java que normalmente son anónimas y se escriben en línea allí donde se usan."
 Habitualmente se tratan de una sola línea de código, y se utilizan para facilitar el uso y el cálculo de operacione ágilmente, apoyándose en el uso de las operaciones contenidas por el paquete de Java 'Java.util'.
 - Para más información: https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html
 
