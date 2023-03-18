@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Mates {
 
-    // ejercicio 1
     /**
      * Devuelve una lista con el cuadrado de cada elemento de otra lista de números
      * @param numeros - lista de enteros
@@ -17,7 +16,6 @@ public class Mates {
         return cuadrados;
     }
 
-    // ejercicio 2
     /**
      * Devuelve la suma de los elementos de una lista de números
      * @param numeros - lista de enteros
@@ -32,8 +30,6 @@ public class Mates {
         return suma;
     }
 
-    // ejercicio 3
-
     /**
      * Devuelve la suma de los elementos pares de una lista de números
      * @param numeros - lista de enteros
@@ -46,8 +42,6 @@ public class Mates {
                     .reduce(0, (a, b) -> a + b);
         return suma;
     }
-
-    // ejercicio 4
 
     /**
      * Devuelve una lista con los elementos pares de otra lista de números
@@ -64,8 +58,6 @@ public class Mates {
         return pares;
     }
 
-
-    // ejercicio 5
     /**
      * Devuelve la media de los elementos de una lista de números
      * @param numeros - lista de enteros
@@ -78,9 +70,6 @@ public class Mates {
         int media = suma / numeros.size();
         return media;
     }
-
-
-    // ejercicio 6
 
     /**
      * Devuelve la desviación típica de los elementos de una lista de números
@@ -96,8 +85,6 @@ public class Mates {
         return desviacion;
     }
 
-    // ejercicio 7
-
     /**
      * Devuelve el menor elemento de una lista de números
      * @param numeros - lista de enteros
@@ -107,8 +94,6 @@ public class Mates {
         return numeros.stream().min(Integer::compareTo).orElse(null);
     }
 
-
-    // ejercicio 8 / 10
     /**
      * Devuelve una lista con todos los elementos de otra lista de String en minúsculas
      * @param lista - lista de cadenas de caracteres
@@ -120,8 +105,6 @@ public class Mates {
         return minusculas;
     }
 
-
-    // ejercicio 9
     /**
      * Devuelve una lista con todos los elementos de otra lista de String concatenados
      * @param al - lista de cadenas de caracteres
@@ -132,8 +115,6 @@ public class Mates {
         return cadena;
     }
 
-
-    // ejercicio 11
     /**
      * Devuelve una lista con todos los elementos de otra lista de String que no empiezan por la letra A
      * @param al - lista de cadenas de caracteres
@@ -148,8 +129,6 @@ public class Mates {
         });
         return sinA;
     }
-
-    // ejercicio 12
 
     /**
      * Devuelve una lista con todos los elementos de otra lista de enteros que multiplicados por 2 son mayores que 6
